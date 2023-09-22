@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- custom google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- custom box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="app.css">
+
+    <!-- js link -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App search</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="city-search" placeholder="Search city here...">
+                <button type="submit" id="send-btn">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="weather-info-wrapper">
+        <div class="title">
+            <h1>Weather App info</h1>
+            <h3 class="date-time">Thursday 10:40 pm</h3>
+            <h1 class="city-title">Nairobi</h1>
+
+            <div class="row">
+                <div class="weather-icon">
+                    <!-- <img src="imgs/clouds.png" alt=""> -->
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="Forecast Image icon">
+                </div>
+                <div class="weather-info">
+                    <h1 class="temp-data">9°C</h1>
+                    <div class="bottom-info">
+                        <div class="group-info">
+                            <i class='bx bx-droplet'></i>
+                            <span class="humid-data">93%</span>
+                        </div>
+                        <div class="group-info">
+                            <i class='bx bx-wind'></i>
+                            <span class="wind-data">5km/h</span>
+                        </div>
+                        <div class="group-info">
+                            <i class='bx bxs-droplet'></i>
+                            <span class="feel-like-data">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="description">Cloudy</p>
+        </div>
+    </div>
+</body>
+</html>
